@@ -21,8 +21,8 @@ router.get('/careers', function (req, res, next) {
   res.render('careers', { title: 'Careers' });
 });
 
-router.get('/investor', function (req, res, next) {
-  res.render('investor', { title: 'Investor' });
+router.get('/invest', function (req, res, next) {
+  res.render('invest', { title: 'Invest' });
 });
 
 router.get('/contact', function (req, res, next) {
