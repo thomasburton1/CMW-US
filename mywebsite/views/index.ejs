@@ -15,19 +15,19 @@
 
 </head>
 
-<body>
-
+<header>
   <!-- Main Navbar -->
-  <nav class="uk-navbar">
+  <nav style="position:fixed; top:0; left:0; width:100%; z-index:100;" class="uk-navbar-container" uk-navbar>
     <div class="uk-navbar-left">
       <ul class="uk-navbar-nav">
         <li class="uk-active">
-          <a href="#">California<strong>MotorWorks</strong></a>
+          <a href="/">California<strong>MobilityWorks</strong></a>
         </li>
       </ul>
     </div>
     <div class="uk-navbar-right">
       <ul class="uk-navbar-nav uk-visible@s">
+
         <li class="uk-active"><a href="/">Home</a></li>
         <li>
           <a href="/about">About</a>
@@ -53,6 +53,12 @@
         <li><a href="/careers">Careers</a></li>
         <li><a href="/invest">Invest</a></li>
         <li><a href="/contact">Contact</a></li>
+        <li><br></li>
+        <li><a href="https://twitter.com/cmw43184112" target="_blank" class="uk-icon-link" uk-icon="twitter"></a></li>
+        <li><a href="https://www.facebook.com/SagittaMotors/" target="_blank" class="uk-icon-link"
+            uk-icon="facebook"></a></li>
+        <li><a href="https://www.linkedin.com/company/cmw-us/" target="_blank" class="uk-icon-link"
+            uk-icon="linkedin"></a></li>
       </ul>
       <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
     </div>
@@ -90,7 +96,65 @@
     </div>
   </div>
 
-  <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+</header>
+
+<body style="height: 100vh; width: 100vw; margin:0; padding:0;">
+
+  <!--<nav style=" background-color: #c0c0c0; position:fixed; top:0; left:0; width:100%; z-index:100;"
+  class="uk-navbar-container" uk-navbar>
+  <div class="uk-navbar-left">
+    <ul class="uk-navbar-nav">
+      <li class="uk-active"><a href="">HI</a></li>
+      <li class="uk-parent"><a href="">YO</a></li>
+      <li><a href=""></a></li>
+    </ul>
+  </div>
+  </nav>-->
+
+
+
+
+  <div style="" class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
+
+    <ul class="uk-slideshow-items">
+      <li>
+        <img src="images/Sagiita_LA_AUTO_1-scaled.jpg" alt="" uk-cover>
+        <div class="uk-position-center uk-position-small uk-text-center">
+          <h2 style="font-family: 'Archivo', sans-serif;" uk-slideshow-parallax="x: 100,-100">Sagitta</h2>
+          <p style="font-family: 'Raleway', sand-serif;" uk-slideshow-parallax="x: 200,-200">LA Auto Show 2021</p>
+          <button class="uk-button uk-button-primary">Reserve Now</button>
+
+        </div>
+      </li>
+      <li>
+        <img src="images/IMG_5230-scaled.jpg" alt="" uk-cover>
+        <div class="uk-position-center uk-position-small uk-text-center">
+          <h2 style="font-family: 'Archivo', sans-serif;" uk-slideshow-parallax="x: 100,-100">Sagitta</h2>
+          <p style="font-family: 'Raleway', sand-serif;" uk-slideshow-parallax="x: 200,-200">LA Auto Show 2021</p>
+          <button class="uk-button uk-button-primary">Reserve Now</button>
+        </div>
+      </li>
+      <li>
+        <img src="images/IMG_5215-scaled.jpg" alt="" uk-cover>
+        <div class="uk-position-center uk-position-small uk-text-center">
+          <h2 style="font-family: 'Archivo', sans-serif;" uk-slideshow-parallax="x: 100,-100">Sagitta</h2>
+          <p style="font-family: 'Raleway', sand-serif;" uk-slideshow-parallax="x: 200,-200">LA Auto Show 2021</p>
+          <button class="uk-button uk-button-primary">Reserve Now</button>
+        </div>
+      </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+      uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+      uk-slideshow-item="next"></a>
+
+  </div>
+
+
+  <!--
+  <div style="" class="uk-responsive-width uk-responsive-height uk-position-relative uk-visible-toggle uk-light"
+    tabindex="-1" uk-slideshow>
 
     <ul class="uk-slideshow-items">
       <li>
@@ -111,27 +175,7 @@
 
 
   </div>
-
-
-
-
-
-
-  <div class="uk-child-width-expand@s uk-text-center" uk-grid>
-    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
-      <h3 class="uk-card-title">Default</h3>
-      <p>Lorem ipsum <a href="#">dolor</a> respectfully bussin</p>
-    </div>
-
-    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
-      <h3 class="uk-card-title">Default</h3>
-      <p>Lorem ipsum <a href="#">dolor</a> respectfully bussin</p>
-    </div>
-  </div>
-
-  <footer>
-    YO
-  </footer>
+-->
 
 
   <!-- UIkit JS -->
