@@ -33,9 +33,9 @@
                     <a href="/about">About</a>
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Partners</a></li>
+                            <li><a id="company-link" href="/about#company-section">Company</a></li>
+                            <li><a id="team-link" href="/about#team-section">Team</a></li>
+                            <li><a id="partners-link" href="/about#partners-section">Partners</a></li>
                         </ul>
                     </div>
                 </li>
@@ -105,7 +105,7 @@
 
 
     <div style="position:absolute; top:100px; left: 3%; right:3%">
-        <div>
+        <div id="company-section">
             <h1 class="uk-heading-line"><span>Our Company</span></h1>
             <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
                 <img src="images/Trailer.jpg" alt="">
@@ -138,7 +138,7 @@
             </div>
         </div>
 
-        <div style="padding-top:3%;">
+        <div id="team-section" style="padding-top:3%;">
             <h1 class="uk-heading-line"><span>The Team</span></h1>
             <p>
                 CMW Inc is led by some of the sharpest minds in EV domain. Our leadership team has decades of industry
@@ -161,7 +161,7 @@
                         <div class="uk-card-body">
                             <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
                                 <img class="" style="width:auto; height:auto;" src="images/Portraits/Scott.jpeg" alt="">
-                                <p class="">Mr. Burton was recently CEO er of Hunt Perovskite Technologies, where he
+                                <p class="">Mr. Burton was recently CEO of Hunt Perovskite Technologies, where he
                                     successfully led a merger with 1366 Technologies to form Cubic PV. Burton previously
                                     served as CEO of Reel Solar, CEO of Parity Solar, COO of Solibro GmbH, and headed up
                                     technology acquisitions for Hanergy Group. Burton is experienced in solar panel
@@ -401,7 +401,7 @@
 
         </div>
 
-        <div style="padding-top:3%;">
+        <div id="partners-section" style="padding-top:3%;">
             <h1 class="uk-heading-line"><span>Partners</span></h1>
             <p>
                 KINETIC GREEN
@@ -432,6 +432,9 @@
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="javascripts/script.js"></script>
 </body>
 
 </html>

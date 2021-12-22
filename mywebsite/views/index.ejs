@@ -32,9 +32,9 @@
           <a href="/about">About</a>
           <div class="uk-navbar-dropdown">
             <ul class="uk-nav uk-navbar-dropdown-nav">
-              <li><a href="#">Company</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Partners</a></li>
+              <li><a id="company-link" href="/about#company-section">Company</a></li>
+              <li><a id="team-link" href="/about#team-section">Team</a></li>
+              <li><a id="partners-link" href="/about#partners-section">Partners</a></li>
             </ul>
           </div>
         </li>
@@ -115,10 +115,10 @@
 
 
 
-  <div style="position:absolute; top:80px;" class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
-    uk-slideshow="animation: push">
+  <div style="position:absolute; " class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+    uk-slideshow="animation: push; ratio:false">
 
-    <ul class="uk-slideshow-items">
+    <ul class="uk-slideshow-items" uk-height-viewport="min-height: 300">
       <li>
         <img src="images/Sagiita_LA_AUTO_1-scaled.jpg" alt="" uk-cover>
         <div class="uk-position-center uk-position-small uk-text-center">
@@ -184,6 +184,9 @@
   <!-- UIkit JS -->
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="javascripts/script.js"></script>
 </body>
 
 </html>
