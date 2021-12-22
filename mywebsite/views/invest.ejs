@@ -15,14 +15,14 @@
 
 </head>
 
-<body>
-
+<header>
     <!-- Main Navbar -->
-    <nav class="uk-navbar">
+    <nav style="position:fixed; top:0; left:0; width:100%; z-index:100; height:80px;" class="uk-navbar-container shift"
+        uk-navbar>
         <div class="uk-navbar-left">
             <ul class="uk-navbar-nav">
                 <li class="uk-active">
-                    <a href="/">California<strong>MotorWorks</strong></a>
+                    <a href="/">California<strong>MobilityWorks</strong></a>
                 </li>
             </ul>
         </div>
@@ -33,9 +33,9 @@
                     <a href="/about">About</a>
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Partners</a></li>
+                            <li><a id="company-link" href="/about#company-section">Company</a></li>
+                            <li><a id="team-link" href="/about#team-section">Team</a></li>
+                            <li><a id="partners-link" href="/about#partners-section">Partners</a></li>
                         </ul>
                     </div>
                 </li>
@@ -51,8 +51,17 @@
                     </div>
                 </li>
                 <li><a href="/careers">Careers</a></li>
-                <li class="uk-active"><a href="/invest">Invest</a></li>
+                <li><a href="/invest">Invest</a></li>
                 <li><a href="/contact">Contact</a></li>
+                <li>
+                    <hr class="uk-divider-vertical" style="height:100%;">
+                </li>
+                <li><a href="https://twitter.com/cmw43184112" target="_blank" class="uk-icon-link"
+                        uk-icon="twitter"></a></li>
+                <li><a href="https://www.facebook.com/SagittaMotors/" target="_blank" class="uk-icon-link"
+                        uk-icon="facebook"></a></li>
+                <li><a href="https://www.linkedin.com/company/cmw-us/" target="_blank" class="uk-icon-link"
+                        uk-icon="linkedin"></a></li>
             </ul>
             <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
         </div>
@@ -61,7 +70,7 @@
     <div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
         <div class="uk-offcanvas-bar">
             <ul class="uk-nav">
-                <li><a href="/">Home</a></li>
+                <li class="uk-active"><a href="/">Home</a></li>
                 <li>
                     <a href="/about">About</a>
                     <div class="uk-navbar-dropdown">
@@ -90,16 +99,13 @@
         </div>
     </div>
 
-    <h1>
-        <%= title %>
-    </h1>
-    <p>Welcome to <%= title %>
-    </p>
+</header>
 
-    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
-        <h3 class="uk-card-title">Default</h3>
-        <p>Lorem ipsum <a href="#">dolor</a> respectfully bussin</p>
-    </div>
+<body>
+
+
+
+
 
 
 

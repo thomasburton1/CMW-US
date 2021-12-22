@@ -41,3 +41,13 @@ nav.shift ul li a:hover:after {
   visibility: visible;
   height: 100%;
 }
+
+.maintainRatio {
+  width:100%;
+  height: auto;
+}
+
+.fullWidth {
+  width:100%;
+}
+
