@@ -15,14 +15,14 @@
 
 </head>
 
-<body>
-
+<header>
     <!-- Main Navbar -->
-    <nav class="uk-navbar">
+    <nav style="position:fixed; top:0; left:0; width:100%; z-index:100; height:80px;" class="uk-navbar-container shift"
+        uk-navbar>
         <div class="uk-navbar-left">
             <ul class="uk-navbar-nav">
                 <li class="uk-active">
-                    <a href="/">California<strong>MotorWorks</strong></a>
+                    <a href="/">California<strong>MobilityWorks</strong></a>
                 </li>
             </ul>
         </div>
@@ -53,6 +53,15 @@
                 <li><a href="/careers">Careers</a></li>
                 <li><a href="/invest">Invest</a></li>
                 <li><a href="/contact">Contact</a></li>
+                <li>
+                    <hr class="uk-divider-vertical" style="height:100%;">
+                </li>
+                <li><a href="https://twitter.com/cmw43184112" target="_blank" class="uk-icon-link"
+                        uk-icon="twitter"></a></li>
+                <li><a href="https://www.facebook.com/SagittaMotors/" target="_blank" class="uk-icon-link"
+                        uk-icon="facebook"></a></li>
+                <li><a href="https://www.linkedin.com/company/cmw-us/" target="_blank" class="uk-icon-link"
+                        uk-icon="linkedin"></a></li>
             </ul>
             <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
         </div>
@@ -90,31 +99,46 @@
         </div>
     </div>
 
-    <div>
+</header>
+
+<body>
+
+
+    <div style="position:absolute; top:100px; left: 3%; right:3%">
         <div>
             <h1 class="uk-heading-line"><span>Our Company</span></h1>
-            <p>
-                CMW (California Mobility Works Inc.) was founded with the intention of creating technologies and
-                products
-                that help push us towards a world that is less reliant on fossil fuels. We envision ourselves as leaders
-                in
-                renewable energy and EV technologies. We are investing in growing our IP portfolio through Design,
-                Research,
-                Development, Acquisitions and Mergers. Today CMW is developing and preparing manufacturing of mobility
-                products for both the consumer and commercial markets.
-            </p>
+            <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+                <img src="images/Trailer.jpg" alt="">
+                <p>
+                    CMW (California Mobility Works Inc.) was founded with the intention of creating technologies and
+                    products
+                    that help push us towards a world that is less reliant on fossil fuels. We envision ourselves as
+                    leaders
+                    in
+                    renewable energy and EV technologies. We are investing in growing our IP portfolio through Design,
+                    Research,
+                    Development, Acquisitions and Mergers. Today CMW is developing and preparing manufacturing of
+                    mobility
+                    products for both the consumer and commercial markets.
+                </p>
+            </div>
+
+
         </div>
 
-        <div>
+        <div style="padding-top:3%;">
             <h1 class="uk-heading-line"><span>R&D, Design Center in Silicon Valley</span></h1>
-
-            <p>In order to support long term innovation and growth, CMW currently occupies a 20K Sq ft R&D, Design
-                Center in
-                Milpitas California. We are planning on acquiring another 30K sq ft at the same location for a total of
-                50,000 sq. ft. for our Silicon Valley corporate headquarters and manufacturing.</p>
+            <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+                <img src="images/Copy of LA AUTO SHOW.jpg" alt="">
+                <p>In order to support long term innovation and growth, CMW currently occupies a 20K Sq ft R&D, Design
+                    Center in
+                    Milpitas California. We are planning on acquiring another 30K sq ft at the same location for a total
+                    of
+                    50,000 sq. ft. for our Silicon Valley corporate headquarters and manufacturing.</p>
+            </div>
         </div>
 
-        <div>
+        <div style="padding-top:3%;">
             <h1 class="uk-heading-line"><span>The Team</span></h1>
             <p>
                 CMW Inc is led by some of the sharpest minds in EV domain. Our leadership team has decades of industry
@@ -122,24 +146,282 @@
                 solution,
                 research, implementation, strategic planning and sustaining.
             </p>
+
+            <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-hover">
+                        <div class="uk-card-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom">Scott Burton</h3>
+                                    <p class="uk-text-meta uk-margin-remove-top">Chairman</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+                                <img class="" style="width:auto; height:auto;" src="images/Portraits/Scott.jpeg" alt="">
+                                <p class="">Mr. Burton was recently CEO er of Hunt Perovskite Technologies, where he
+                                    successfully led a merger with 1366 Technologies to form Cubic PV. Burton previously
+                                    served as CEO of Reel Solar, CEO of Parity Solar, COO of Solibro GmbH, and headed up
+                                    technology acquisitions for Hanergy Group. Burton is experienced in solar panel
+                                    manufacturing and was also involved in the development, financing and construction
+                                    of over 100 photovoltaic projects in China, USA, Germany and Italy. He has also
+                                    established successful manufacturing businesses in China and Malaysia for Seagate,
+                                    Advanced Energy, Brooks Automation and Keystone Inc. Burton holds a B.S. in
+                                    Mechanical Engineering from Worcester Polytechnic Institute and an M.S. in Materials
+                                    Science from Stanford University.</p>
+                            </div>
+
+                        </div>
+                        <div class="uk-card-footer">
+                            <a href="#" class="uk-button uk-button-text">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-hover">
+                        <div class="uk-card-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom">Greg Sytuk</h3>
+                                    <p class="uk-text-meta uk-margin-remove-top">President & CFO</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+                                <img style="width:auto; height:auto;" src="images/Portraits/Greg.jpeg" alt="">
+                                <p>Greg Sytuk, President/CEO. Mr. Sutyak has over 28 years of business management and
+                                    finance experience. Spent first ten years in commercial/corporate banking
+                                    (SPNB/Tokai Bank), whereas VP managed a $100M portfolio. Has spent last 15 years in
+                                    the hi-tech markets as COO and CFO was at Nutirtion53, inc., CFO/Co-founder of
+                                    HandHeld Entertainment, Inc., CFO of TestDrive Corporation, a mass-market software
+                                    distribution business that was successfully developed & sold to a Fortune 100
+                                    Company (NYSE:RRD) and as CFO was instrumental in a successful IPO (NASDAQ:AHWY) and
+                                    achieving a market cap of $500M.
+
+                                    Mr. Sutyak has MBA from the University of San Francisco, Master of Arts: Cours de
+                                    Civilisation Francaise, University of Paris-Sorbonne, Paris, France 1978 and BA in
+                                    Economics and Mathematics from the University of Pittsburgh in 1977</p>
+                            </div>
+
+                        </div>
+                        <div class="uk-card-footer">
+                            <a href="#" class="uk-button uk-button-text">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-hover">
+                        <div class="uk-card-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom">Prof. Jim Shook</h3>
+                                    <p class="uk-text-meta uk-margin-remove-top">Chief Designer & Co-Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+                                <img style="width:auto; height:auto;" src="images/Portraits/Jim.jpeg" alt="">
+                                <p>Jim Shook is an accomplished designer and manager who has made significant
+                                    contributions to transportation products world wide.
+                                    He was the principle designer on well known classic cars including the Pontiac
+                                    Firebirds made famous in the Smokey and the Bandit movies as well on Cadillac models
+                                    that are now highly collectable. He was a founder of Zebra Motors which was one of
+                                    the first modern EV companies in the U.S., and had his own consulting design office
+                                    in Palo Alto for 25 years specializing in transportation product design. At
+                                    Bombardier in Canada he was responsible for mass transit vehicle design and for seat
+                                    manufacturing (a $3M/yr business). At Tandem Computers his team achieved 35
+                                    International Design Awards and he was responsible for the company achieving ISO
+                                    9001 certification.
+                                    As a National Vice President of the Industrial Designers Society of America and as a
+                                    Professor at Stanford, San Jose State, and Academy of Art Universities he has taught
+                                    many designers who are responsible for vehicle designs all over the world.</p>
+                            </div>
+
+                        </div>
+                        <div class="uk-card-footer">
+                            <a href="#" class="uk-button uk-button-text">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-hover">
+                        <div class="uk-card-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom">Bobby Rekhi</h3>
+                                    <p class="uk-text-meta uk-margin-remove-top">Executive V.P. & Co-Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+                                <img style="width:auto; height:auto;" src="images/Portraits/Bobby.jpeg" alt="">
+                                <p>A veteran of Silicon Valley, Mr. Rekhi has been a key player in the Silicon Valley
+                                    (California) venture community since its inception. Mr. Rekhi has considerable
+                                    experience in High Technology
+                                    Mr Rekhi has worked for well know semiconductor companies like AMD and National
+                                    Semiconductor and Telefunken Semi (Germany) where he was a Exec VP.
+                                    Through his understanding of the technology market and culture of the Valley, Mr.
+                                    Rekhi has been able to be a part of success stories such as TestDrive Systems
+                                    (acquired by RR Donnelly), AudioHighway (Nasdaq: AHWY, Market cap USD S500 Millions)
+                                    CyberPlus (acquired by A4 Systems), Intellimatch, Mars Communications (Acquired by
+                                    Globespan (GSPN)) and MTC (acquired by Echelon (ELON)).
+                                    Rekhi most recently was Chairman of California Mobility Works Inc. (California)
+                                    HealthHighway (USA) and KARA Technology (Toronto. Canada), and founding CEO and
+                                    Chairman of CyberPlus .</p>
+                            </div>
+
+                        </div>
+                        <div class="uk-card-footer">
+                            <a href="#" class="uk-button uk-button-text">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-hover">
+                        <div class="uk-card-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom">Migdat Hodzic</h3>
+                                    <p class="uk-text-meta uk-margin-remove-top">CTO</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+                                <img style="width:auto; height:auto;" src="images/Portraits/Migdat.jpeg" alt="">
+                                <p>Leader in both management and creative engineering. Vast experience in leading
+                                    technology companies and engineering advances in computer science, materials
+                                    science, artificial intelligence, battery design, advanced algorithm applications
+                                    and wireless technologies.
+                                    Successful leadership as CTO Business Development manager as well as supplier
+                                    management. Has the ability to manage technology with a business orientation. </p>
+                            </div>
+
+                        </div>
+                        <div class="uk-card-footer">
+                            <a href="#" class="uk-button uk-button-text">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-hover">
+                        <div class="uk-card-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom">Ramesh Konda</h3>
+                                    <p class="uk-text-meta uk-margin-remove-top">COO</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+                                <img style="width:auto; height:auto;" src="images/Portraits/Ramesh.jpeg" alt="">
+                                <p>Ramesh Konda has 30 years of combined working experience in automotive,
+                                    semiconductor, manufacturing, and information technology industries. During his
+                                    career, he has held key responsibilities such as Vice President, Director, Asst.
+                                    Production Manager, Quality Manager, and Program Manager. Ramesh has worked at
+                                    notable companies such as General Motors and Seagate Technology.
+                                    Ramesh is a Fellow of the American Society for Quality (ASQ), and the past chair of
+                                    the ASQ Silicon Valley section. He is a Certified Quality Engineer (CQE) and
+                                    Certified Quality Auditor (CQA) from ASQ. Ramesh holds Ph.D., M.B.A., M.S.
+                                    (Industrial Engineering), and B.S. (Mechanical Engineering).</p>
+                            </div>
+
+                        </div>
+                        <div class="uk-card-footer">
+                            <a href="#" class="uk-button uk-button-text">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-hover">
+                        <div class="uk-card-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom">Amrit Sachdev</h3>
+                                    <p class="uk-text-meta uk-margin-remove-top">VP Operations</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+                                <img style="width:auto; height:auto;" src="images/Portraits/Amrit.jpeg" alt="">
+                                <p>30-year veteran in the information technology industry. Extensive experience in US
+                                    and international markets, understanding the difference in business strategies,
+                                    requirements, product design and development. Experienced and well-rounded leader in
+                                    product, and partner management. Adept in innovative approaches to scale product
+                                    offerings. At Facebook, Amrit led network appliance product team to global
+                                    deployment in Telecom and ISP sector. He has also had leadership positions at
+                                    Citrix, byteMobile, Gemini Technologies, Sun Microsystems, and Lockheed.
+                                    He holds a MSc in Applied Physics, MS in Software</p>
+                            </div>
+
+                        </div>
+                        <div class="uk-card-footer">
+                            <a href="#" class="uk-button uk-button-text">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-hover">
+                        <div class="uk-card-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom">Vinod Rao</h3>
+                                    <p class="uk-text-meta uk-margin-remove-top">Sr. Manager Engineering</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+                                <img style="width:auto; height:auto;" src="images/Portraits/Vinod.jpeg" alt="">
+                                <p>After graduating from BIT with BSME, Vinod has 40 years working experience at a cross
+                                    section of Silicon Valley technology companies. Experience includes Mechanical,
+                                    Electro-Mechanical, and Optical-Elector-Mechanical components and systems. Vinod had
+                                    played a key part in over 5 Startup Company out of which 3 were acquired. Vinod was
+                                    a co-founder of Omek Disk Drive and the technology was sold to India. Vinod was a
+                                    co-founded SREMS to develop and manufacture the cooling system for Tesla Motors. In
+                                    2015, and Xinen Technology to develop new generations of cooling system for
+                                    electrical vehicles. Vinod has number of US patents including a patent in Vehicle
+                                    Battery Module with Cooling and Safety Features.</p>
+                            </div>
+
+                        </div>
+                        <div class="uk-card-footer">
+                            <a href="#" class="uk-button uk-button-text">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-        <div>
+        <div style="padding-top:3%;">
             <h1 class="uk-heading-line"><span>Partners</span></h1>
             <p>
                 KINETIC GREEN
                 Kinetic Green is suppling critical components for CMW products. They are one of the largest
                 manufacturers of Electric Vehicles in India.
-                Over the years, Kinetic has proved its excellence, time and again, with countless engineering and design
+                Over the years, Kinetic has proved its excellence, time and again, with countless engineering and
+                design
                 marvels. A name synonymous with trust and reliability, Kinetic has a rich legacy of four decades.
                 Kinetic has sold over 7.5 million vehicles and established itself as an innovative and progressive
-                company. Riding on the most advanced technologies, Kinetic is ready to take the world forward. It’s not
+                company. Riding on the most advanced technologies, Kinetic is ready to take the world forward. It’s
+                not
                 just a journey ahead in distance. It’s a journey ahead in time.. towards a green tomorrow! Kinetic
                 Green’s Electric Vehicles are designs from the future.. smart, sophisticated and most importantly,
                 sensitive to future requisites. Their intrinsic features, like zero carbon emissions, no noise, no
-                vibrations, elegant looks and intelligent ergonomics, earn them a favor with modern sensibilities. As we
-                present the complete range of Electric Vehicles from Kinetic Green, it is not just a sense of pride that
-                we feel; it is the sense of deep satisfaction that comes from changing the course of things for better.
+                vibrations, elegant looks and intelligent ergonomics, earn them a favor with modern sensibilities.
+                As we
+                present the complete range of Electric Vehicles from Kinetic Green, it is not just a sense of pride
+                that
+                we feel; it is the sense of deep satisfaction that comes from changing the course of things for
+                better.
             </p>
         </div>
 
