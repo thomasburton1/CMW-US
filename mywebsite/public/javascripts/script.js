@@ -17,3 +17,18 @@ $('#partners-link').click(function () {
         scrollTop: $('#partners-section').offset().top
     }, 2000);
 });*/
+
+function initMap() {
+    const cmw = {
+        lat: 37.448522147157746, lng: -121.92017940721435
+    };
+    const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 11,
+        center: cmw
+    });
+
+    const marker = new google.maps.Marker({
+        position: cmw,
+        map: map
+    });
+}
